@@ -2,8 +2,6 @@
 
 Aplicação Java desenvolvida para consultar e exibir informações meteorológicas em tempo real de qualquer cidade, consumindo uma API REST externa de clima.
 
----
-
 ## 🚀 Funcionalidades
 
 - **Consulta em Tempo Real:** Busca temperatura, condição do tempo, umidade e outras métricas climáticas.
@@ -11,17 +9,11 @@ Aplicação Java desenvolvida para consultar e exibir informações meteorológi
 - **Interface via Console:** Interação simples e direta no terminal.
 - **Arquitetura Organizada:** Separação clara de responsabilidades entre serviços de API, mapeamento de dados e interface do usuário.
 
----
-
 ## 🛠️ Tecnologias Utilizadas
 
 - **Linguagem:** Java (JDK 17+)
 - **Consumo de API:** `java.net.http.HttpClient`
 - **Manipulação de JSON:** Jackson / Gson / Org.JSON
-
-## 📁 Estrutura do Projeto
-
----
 
 ## 🔑 Configuração da Chave de API (API Key)
 
