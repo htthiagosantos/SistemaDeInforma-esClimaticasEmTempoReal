@@ -15,6 +15,7 @@ Aplicação Java desenvolvida para consultar e exibir informações meteorológi
 - **Consumo de API:** `java.net.http.HttpClient`
 - **Manipulação de JSON:** Jackson / Gson / Org.JSON
 
+
 ## 🔑 Configuração da Chave de API (API Key)
 
 > ⚠️ **IMPORTANTE:** Para que a aplicação funcione corretamente, é necessário obter uma chave de API gratuita no provedor de clima utilizado (ex: OpenWeatherMap / WeatherAPI) e configurá-la no projeto.
@@ -25,6 +26,14 @@ Aplicação Java desenvolvida para consultar e exibir informações meteorológi
 2. Gere a sua **API Key** no painel de controle.
 3. No arquivo `WeatherService.java`, insira a sua chave na constante responsável ou configure-a como uma variável de ambiente:
 
-```java
-// Exemplo no arquivo WeatherService.java
-private static final String API_KEY = "SUA_CHAVE_AQUI";
+## 📁 Estrutura do Projeto
+
+```text
+src/ProjectoClima/
+├── CidadeNaoEncontradaException.java  # Exceção para busca de cidade inválida
+├── ConexaoApiException.java           # Exceção para falhas na requisição/API
+├── ConsoleView.java                  # Interface de usuário no terminal
+├── DadosClimaticos.java               # Modelo/DTO de dados climáticos
+├── WeatherService.java                # Serviço de comunicação HTTP com a API
+├── WeatherMapper.java                 # Mapeador da resposta JSON para o modelo
+└── ProjetoSistemaDeInforClimaticaEmTempoReal.java # Classe principal (main)
